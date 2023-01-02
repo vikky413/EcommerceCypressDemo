@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-12-23T05:08:53.543Z",
+    "end": "2022-12-23T05:09:18.709Z",
+    "duration": 25166,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0b7e95f6-77f8-4038-98f1-394b03b44d2e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\1-getting-started\\CrudOperation.cy.js",
+      "file": "cypress\\e2e\\1-getting-started\\CrudOperation.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c56a04d1-82ca-4f39-8b03-f5cbe1d65612",
+          "title": "Petstore APi",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Post Users Details - POST",
+              "fullTitle": "Petstore APi Post Users Details - POST",
+              "timedOut": null,
+              "duration": 17818,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'POST',\n  url: _CrudEnv.BASE_URL + '/user',\n  headers: {\n    'Content-Type': 'application/json'\n  },\n  body: {\n    \"id\": 0,\n    \"username\": _CrudEnv.userName,\n    \"firstName\": \"Ankul\",\n    \"lastName\": \"Singh\",\n    \"email\": \"string@gmail.com\",\n    \"password\": \"string@123\",\n    \"phone\": \"string\",\n    \"userStatus\": 0\n  }\n}).then(response => {\n  expect(response.status).to.eq(200);\n});",
+              "err": {},
+              "uuid": "fc10ef6f-0688-4fc6-8e05-7081f890cdfe",
+              "parentUUID": "c56a04d1-82ca-4f39-8b03-f5cbe1d65612",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Fetch  Users Details - GET",
+              "fullTitle": "Petstore APi Fetch  Users Details - GET",
+              "timedOut": null,
+              "duration": 1305,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'GET',\n  url: _CrudEnv.BASE_URL + '/user' + `/${_CrudEnv.userName}`,\n  headers: {\n    'Content-Type': 'application/json'\n  }\n}).then(response => {\n  expect(response.status).to.eq(200);\n});",
+              "err": {},
+              "uuid": "22a8fee8-13dd-4ddf-b086-aa221136856d",
+              "parentUUID": "c56a04d1-82ca-4f39-8b03-f5cbe1d65612",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Updates  Users Details - PUT",
+              "fullTitle": "Petstore APi Updates  Users Details - PUT",
+              "timedOut": null,
+              "duration": 3761,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'PUT',\n  url: _CrudEnv.BASE_URL + '/user' + `/${_CrudEnv.userName}`,\n  headers: {\n    'Content-Type': 'application/json'\n  },\n  body: {\n    \"id\": 0,\n    \"username\": _CrudEnv.userName,\n    \"firstName\": \"Ankul12\",\n    \"lastName\": \"Singh\",\n    \"email\": \"stri1ng@gmail.com\",\n    \"password\": \"stri1ng@123\",\n    \"phone\": \"str1ing\",\n    \"userStatus\": 0\n  }\n}).then(response => {\n  expect(response.status).to.eq(200);\n});",
+              "err": {},
+              "uuid": "148cfe9f-2bc7-41f4-a6a4-6c800630124f",
+              "parentUUID": "c56a04d1-82ca-4f39-8b03-f5cbe1d65612",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Delete Users Details - DELETE",
+              "fullTitle": "Petstore APi Delete Users Details - DELETE",
+              "timedOut": null,
+              "duration": 2210,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'DELETE',\n  url: _CrudEnv.BASE_URL + '/user' + `/${_CrudEnv.userName}`,\n  headers: {\n    'Content-Type': 'application/json'\n  }\n}).then(response => {\n  expect(response.status).to.eq(200);\n});",
+              "err": {},
+              "uuid": "33ccefc9-07a8-48a4-ae83-164c50aaa02b",
+              "parentUUID": "c56a04d1-82ca-4f39-8b03-f5cbe1d65612",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fc10ef6f-0688-4fc6-8e05-7081f890cdfe",
+            "22a8fee8-13dd-4ddf-b086-aa221136856d",
+            "148cfe9f-2bc7-41f4-a6a4-6c800630124f",
+            "33ccefc9-07a8-48a4-ae83-164c50aaa02b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 25094,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

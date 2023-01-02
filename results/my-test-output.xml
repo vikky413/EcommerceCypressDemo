@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="69.891" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-12-23T05:01:57" tests="0" file="cypress\e2e\1-getting-started\NopeApi.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="DEMO ECOMMERECE WEB API" timestamp="2022-12-23T05:01:57" tests="3" time="69.856" failures="0">
+    <testcase name="DEMO ECOMMERECE WEB API Search  Case " time="51.514" classname="Search  Case ">
+    </testcase>
+    <testcase name="DEMO ECOMMERECE WEB API Book Type " time="11.446" classname="Book Type ">
+    </testcase>
+    <testcase name="DEMO ECOMMERECE WEB API Newsletter Subscribe" time="2.092" classname="Newsletter Subscribe">
+    </testcase>
+  </testsuite>
+</testsuites>
