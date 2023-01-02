@@ -14,6 +14,11 @@ pipeline {
                sh 'npm install -g'
            }
        }
+       stage('Dependencies') {
+           steps {
+               sh 'npm install -g cypress'
+           }
+       }
        stage('e2e Tests') {
                   steps {
                 sh 'npm cypress run'
